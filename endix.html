@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>بونبولين - قائمة الحلويات</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>بونبولين</h1>
+        <p>الحلا بلمستنا غيّر</p>
+    </div>
+
+    <div class="menu-section" id="menuSection"></div>
+
+    <div class="cart-section">
+        <div class="delivery-option">
+            <label>
+                <input type="radio" name="delivery" value="delivery" checked>
+                🚚 توصيل
+            </label>
+            <label>
+                <input type="radio" name="delivery" value="pickup">
+                🏪 استلام
+            </label>
+        </div>
+
+        <div class="customer-info">
+            <input type="text" id="customerName" placeholder="الاسم *" required>
+            <input type="tel" id="customerPhone" placeholder="رقم الجوال *" required>
+            <input type="text" id="customerAddress" placeholder="العنوان (للتوصيل) *" required>
+        </div>
+
+        <div class="order-summary">
+            <h3>ملخص الطلب</h3>
+            <div id="summaryItems">
+                <div class="empty-cart">لم تقم باختيار أي منتجات بعد</div>
+            </div>
+            <div class="total" id="totalPrice">الإجمالي: 0 ريال</div>
+        </div>
+
+        <button class="submit-btn" id="submitBtn" disabled>
+            <span>📱 إرسال الطلب عبر واتساب</span>
+        </button>
+    </div>
+
+    <div class="footer">
+        صنع بواسطة المبرمج مالك البيلي |
+        <a href="https://wa.me/966547308744">+966 54 730 8744</a>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
